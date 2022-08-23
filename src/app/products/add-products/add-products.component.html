@@ -1,0 +1,99 @@
+<form [formGroup]="addProductForm" (ngSubmit)="addProduct()">
+  <div class="container">
+    <div class="mb-3">
+      <label for="id" class="form-label">id</label>
+      <input type="text" formControlName="id" class="form-control" id="id" />
+    </div>
+    <div class="mb-3">
+      <label for="product_name" class="form-label">product_name</label>
+      <input
+        type="email"
+        formControlName="product_name"
+        class="form-control"
+        id="product_name"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">description</label>
+      <input
+        type="text"
+        formControlName="description"
+        class="form-control"
+        id="description"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="price" class="form-label">price</label>
+      <input
+        type="text"
+        formControlName="price"
+        class="form-control"
+        id="price"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="categoryId" class="form-label">categoryId</label>
+      <input
+        type="text"
+        formControlName="categoryId"
+        class="form-control"
+        id="categoryId"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="is_available" class="form-label">is_available</label>
+      <input
+        type="text"
+        formControlName="is_available"
+        class="form-control"
+        id="is_available"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="product_img" class="form-label">product_img</label>
+      <input
+        type="text"
+        formControlName="product_img"
+        class="form-control"
+        id="product_img"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="rating" class="form-label">rating</label>
+      <input
+        type="text"
+        formControlName="rating"
+        class="form-control"
+        id="rating"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="reviews" class="form-label">reviews</label>
+      <input
+        type="text"
+        formControlName="review"
+        class="form-control"
+        id="reviews"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="vender_name" class="form-label">vendor_name</label>
+      <input
+        type="text"
+        formControlName="vender_name"
+        class="form-control"
+        id="vender_name"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="warranty" class="form-label">warranty</label>
+      <input
+        type="text"
+        formControlName="warranty"
+        class="form-control"
+        id="warranty"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>

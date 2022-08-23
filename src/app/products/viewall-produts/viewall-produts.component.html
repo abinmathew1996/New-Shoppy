@@ -1,0 +1,141 @@
+<!-- catagory bar -->
+
+<div class="container-fluid">
+    <div class="container d-flex">
+      <div class="m-3">
+        <a (click)="filter('')" class="">
+          <img
+            style="margin-left: 20%"
+            src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100"
+            alt=""
+          />
+          <div class="fs-5" style="margin-left: 27%; width: 100%">
+            All Products
+          </div>
+        </a>
+      </div>
+  
+      <div class="m-3">
+        <a (click)="filter('1')" class="">
+          <img
+            style="margin-left: 20%"
+            src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100"
+            alt=""
+          />
+          <div class="fs-5" style="margin-left: 27%; width: 100%">Fashion</div>
+        </a>
+      </div>
+      <div class="m-3">
+        <a (click)="filter('2')" class="">
+          <img
+            style="margin-left: 20%"
+            src="https://rukminim1.flixcart.com/flap/128/128/image/c12afc017e6f24cb.png?q=100"
+            alt=""
+          />
+          <div class="fs-5" style="margin-left: 27%; width: 100%">
+            Electronics
+          </div>
+        </a>
+      </div>
+      <div class="m-3">
+        <a (click)="filter('3')" class="">
+          <img
+            style="margin-left: 20%"
+            src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100"
+            alt=""
+          />
+          <div class="fs-5" style="margin-left: 27%; width: 100%">Appliances</div>
+        </a>
+      </div>
+      <div class="m-3">
+        <a (click)="filter('4')" class="">
+          <img
+            style="margin-left: 20%"
+            src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100"
+            alt=""
+          />
+          <div class="fs-5" style="margin-left: 27%; width: 100%">Grocery</div>
+        </a>
+      </div>
+      <div class="m-3">
+        <a (click)="filter('5')" class="">
+          <img
+            style="margin-left: 20%"
+            src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100"
+            alt=""
+          />
+          <div class="fs-5" style="margin-left: 27%; width: 100%">Mobiles</div>
+        </a>
+      </div>
+      <div class="m-3">
+        <a (click)="filter('6')" class="">
+          <img
+            style="margin-left: 20%"
+            src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100"
+            alt=""
+          />
+          <div class="fs-5" style="margin-left: 27%; width: 100%">Home</div>
+        </a>
+      </div>
+      <div class="m-3">
+        <a (click)="filter('7')" class="">
+          <img
+            style="margin-left: 20%"
+            src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100"
+            alt=""
+          />
+          <div class="fs-5" style="margin-left: 27%; width: 100%">
+            Toys and More
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+    <!-- Section-->
+    <section class="py-5">
+      <div class="container px-4 px-lg-5 mt-5">
+        <div
+          class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center"
+        >
+          <div
+            *ngFor="
+              let products of filterCategory | filter: searchkey:'product_name'
+            "
+            class="col mb-5"
+          >
+            <div class="card h-100" style="background-size:cover;">
+              <!-- Product image-->
+              <img
+                style="height: 250px"
+                class="card-img-top"
+                src="{{ products.product_img }}"
+                alt="..."
+              />
+              <!-- Product details-->
+              <div class="card-body p-4">
+                <div class="text-center">
+                  <!-- Product name-->
+                  <h5 class="fw-bolder">{{ products.product_name }}</h5>
+                  <!-- Product price-->
+                  {{ products.price }}
+                </div>
+              </div>
+              <!-- Product actions-->
+              <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                <div class="text-center">
+                  <a
+                    class="btn btn-outline-dark mt-auto"
+                    href="products/view-product/{{ products.id }}"
+                    >View options</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+  
