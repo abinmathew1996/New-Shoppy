@@ -15,6 +15,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     SiteLayoutModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

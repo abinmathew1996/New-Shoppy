@@ -11,16 +11,16 @@ import { ProductService } from '../product.service';
 export class AddProductsComponent implements OnInit {
   addProductForm = this.formBuilder.group({
     id: [],
-    product_name: [''],
-    categoryId: [''],
-    description: [''],
-    price: [''],
-    is_avilable: [''],
-    product_img: [''],
-    rating: [''],
-    reviews: [''],
-    vender_name: [''],
-    warranty: [''],
+    product_name: [""],
+    categoryId: [""],
+    description: [""],
+    price: [],
+    is_available: [],
+    product_img: [""],
+    rating: [],
+    reviews: [],
+    vender_name: [""],
+    warranty: [""],
   });
   constructor(
     private router: Router,
@@ -37,7 +37,7 @@ export class AddProductsComponent implements OnInit {
       categoryId: this.addProductForm.value.categoryId,
       description: this.addProductForm.value.description,
       price: this.addProductForm.value.price,
-      is_avilable: this.addProductForm.value.is_avilable,
+      is_available: this.addProductForm.value.is_available,
       product_img: this.addProductForm.value.product_img,
       rating: this.addProductForm.value.rating,
       reviews: this.addProductForm.value.reviews,
@@ -46,6 +46,8 @@ export class AddProductsComponent implements OnInit {
     };
 
     this.productService.addProducts(newProduct).subscribe((item: any) => {
+      console.log(item);
+      
       alert('product added successfully');
       this.router.navigateByUrl('products');
     });
