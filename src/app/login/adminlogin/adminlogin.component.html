@@ -1,0 +1,40 @@
+
+<div class="container" >
+    <div class="row">
+      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+        <div class="card border-0 shadow rounded-3 my-5" style="background-color:rgb(128, 131, 132) ;">
+          <div class="card-body p-4 p-sm-5">
+            <h5 class="card-title text-center mb-4 fw-light fs-1" style="font-family: 'DynaPuff', cursive; color: azure;">Admin LogIn</h5>
+            <form [formGroup]="loginform" (ngSubmit)="login()">
+              <div class="form-floating mb-4">
+                <input type="email" class="form-control"  formControlName="emailId" id="emailId" placeholder="name@example.com">
+                <label for="emailId">Email address</label>
+              </div>
+              <div class="form-floating mb-4">
+                <input type="password" class="form-control"  formControlName="Current_password" id="Password" placeholder="Password">
+                <label for="Current_password">Password</label>
+              </div>
+    
+              <div class="form-check mb-3">
+                <input class="form-check-input"   formControlName="product_name" type="checkbox" value="" id="rememberPasswordCheck">
+                <label class="form-check-label" for="rememberPasswordCheck">
+                  Remember password
+                </label>
+                <label class="ms-5" for="">
+                  <a href="products/admin-signin" style="text-decoration:none; color: rgba(49, 53, 53, 0.985); ">New User ?</a>
+                </label>
+
+
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold w-25" type="submit">login</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    
+    

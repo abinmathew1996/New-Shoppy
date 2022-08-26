@@ -32,7 +32,7 @@ export class AddProductsComponent implements OnInit {
 
   addProduct() {
     let newProduct = {
-      id: this.addProductForm.value.product_name,
+      id: this.addProductForm.value.id,
       product_name: this.addProductForm.value.product_name,
       categoryId: this.addProductForm.value.categoryId,
       description: this.addProductForm.value.description,

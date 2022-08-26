@@ -10,6 +10,7 @@ import { AddProductsComponent } from './add-products/add-products.component';
 import { UpdateProductsComponent } from './update-products/update-products.component';
 import { FilterPipe } from './pipe/filter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddCartComponent } from './add-cart/add-cart.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AddProductsComponent,
     UpdateProductsComponent,
     FilterPipe,
+    AddCartComponent,
     
   ],
   imports: [

@@ -157,17 +157,95 @@
       "warranty": 1
     },
     {
-      "id": "chridhar",
-      "product_name": "chridhar",
-      "categoryId": "2",
-      "description": "asdfghjklqwertyuiop[zxcvbnm",
-      "price": "2000",
-      "is_available": "",
-      "product_img": "https://rukminim1.flixcart.com/image/588/706/k23m4cw0/sari/w/5/w/free-mor-skyblue-radadiyatrd-original-imafhgqfbfq7fmck.jpeg?q=50",
+      "id": "15",
+      "product_name": "asdfghjk",
+      "categoryId": "5",
+      "description": "ASDFGHJKL;",
+      "price": "10000",
+      "is_available": "true",
+      "product_img": "https://i.postimg.cc/MZ54bH1h/dp-641.jpg",
       "rating": "4.4",
-      "reviews": "",
+      "reviews": "5",
+      "vender_name": "Kalyan Textils",
+      "warranty": "1"
+    },
+    {
+      "id": "gUD7nU6",
+      "product_name": "",
+      "categoryId": "",
+      "description": "",
+      "price": null,
+      "is_available": null,
+      "product_img": "",
+      "rating": null,
+      "reviews": null,
       "vender_name": "",
-      "warranty": "5"
+      "warranty": ""
+    }
+  ],
+  "Signup": [
+    {
+      "id": 1,
+      "userName": "abin",
+      "Phone": 1234567890,
+      "Password": 123456,
+      "emailId": "abin@gmail.com"
+    },
+    {
+      "id": 2,
+      "userName": "przi",
+      "Phone": 1234567890,
+      "Password": 123456,
+      "emailId": "przi@gmail.com"
+    },
+    {
+      "id": 3,
+      "userName": "hari",
+      "Phone": 1234567890,
+      "Password": 123456,
+      "emailId": "hari@gmail.com"
+    },
+    {
+      "id": 4,
+      "userName": "sree",
+      "Phone": 1234567890,
+      "Password": 123456,
+      "emailId": "sree@gmail.com"
+    },
+    {
+      "id": 5,
+      "userName": "renju",
+      "Phone": 1234567890,
+      "Password": 123456,
+      "emailId": "renju@gmail.com"
+    },
+    {
+      "id": 6,
+      "userName": "anu",
+      "Phone": 1234567890,
+      "Password": 123456,
+      "emailId": "anu@gmail.com"
+    },
+    {
+      "id": 7,
+      "userName": "anoop",
+      "emailId": "anoop@gmail.com",
+      "Password": "123456789",
+      "Phone": "1234567890"
+    },
+    {
+      "id": 8,
+      "userName": "anoop",
+      "emailId": "anoop@gmail.com",
+      "Password": "12345",
+      "Phone": "1234567890"
+    },
+    {
+      "id": 9,
+      "userName": "anoop",
+      "emailId": "anoop@gmail.com",
+      "Password": "123",
+      "Phone": "1234567890"
     }
   ]
 }
